@@ -8,61 +8,83 @@
   </head>
   <body>
     <form action="register.php">
-      <div>
-        <label for="name">Name :</label>
-        <input id="name" type="text" />
-      </div>
-      <br />
-      <div>
-        <label for="surname">Surname : </label>
-        <input id="surname" type="text" />
-      </div>
-      <br />
-      <div>
-        <label for="intro">Write about yourself</label>
-        <textarea id="intro" cols="20" rows="5"></textarea>
-      </div>
-      <br />
-      <div>
-        <label for="myfile">Upload your CV:</label>
-        <input type="file" id="myfile" name="myfile" />
-      </div>
-      <div>
-        <p>Gender</p>
-        <input type="radio" id="woman" name="gender" />
-        <label for="woman">Woman</label>
-        <input type="radio" id="man" name="gender" />
-        <label for="man">Man</label>
-      </div>
-      <br />
-      <div>
-        <label for="mail">Email : </label>
-        <input type="email" id="mail" />
-      </div>
-      <br />
-      <div>
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" />
-      </div>
-      <div>
-        <p>Lorem ipsum dolor sit.</p>
-        <input type="checkbox" id="lorem" />
-        <label for="lorem">Lorem</label>
-        <input type="checkbox" id="ipsum" />
-        <label for="ipsum">Ipsum</label>
-        <input type="checkbox" id="dolor" />
-        <label for="dolor">Dolor</label>
-        <input type="checkbox" id="sit" />
-        <label for="sit">Sit</label>
-      </div>
-      <br />
-      <div>
-        <label for="question">Feeling burnt out? : </label>
-        <select id="question">
-          <option value="true">YES</option>
-          <option value="false">NO</option>
-        </select>
-      </div>
+      <h1>Please fill the form.</h1>
+      <hr />
+      <table>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Personal Informations</legend>
+              <div>
+                <label for="name">Name :</label>
+                <input id="name" type="text" />
+              </div>
+              <br />
+              <div>
+                <label for="surname">Surname : </label>
+                <input id="surname" type="text" />
+              </div>
+              <br />
+              <div>
+                <p>Gender</p>
+                <input type="radio" id="woman" name="gender" />
+                <label for="woman">Woman</label>
+                <input type="radio" id="man" name="gender" />
+                <label for="man">Man</label>
+              </div>
+              <br />
+              <div>
+                <label for="mail">Email : </label>
+                <input type="email" id="mail" />
+              </div>
+              <br />
+              <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" />
+              </div>
+            </fieldset>
+          </td>
+          <td style="vertical-align: top">
+            <fieldset>
+              <legend>Tell me about yourself</legend>
+              <div>
+                <label for="intro">Write about yourself</label>
+                <textarea id="intro" cols="20" rows="5"></textarea>
+              </div>
+              <br />
+              <div>
+                <label for="myfile">Upload your CV:</label>
+                <input type="file" id="myfile" name="myfile" />
+              </div>
+              <br />
+              <div>
+                <label for="question">Feeling burnt out? : </label>
+                <select id="question">
+                  <option value="true">YES</option>
+                  <option value="false">NO</option>
+                </select>
+              </div>
+            </fieldset>
+          </td>
+          <td style="vertical-align: top">
+            <fieldset>
+              <legend>lorem ipsum</legend>
+              <div>
+                <p>Lorem ipsum dolor sit.</p>
+                <input type="checkbox" id="lorem" />
+                <label for="lorem">Lorem</label>
+                <input type="checkbox" id="ipsum" />
+                <label for="ipsum">Ipsum</label>
+                <input type="checkbox" id="dolor" />
+                <label for="dolor">Dolor</label>
+                <input type="checkbox" id="sit" />
+                <label for="sit">Sit</label>
+              </div>
+            </fieldset>
+          </td>
+        </tr>
+      </table>
+      <hr />
       <br />
       <button type="submit">Save !</button>
       <button type="reset">Reset !</button>
