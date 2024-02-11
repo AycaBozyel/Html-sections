@@ -12,23 +12,49 @@
       <hr />
       <table>
         <tr>
-          <td>
+          <td style="vertical-align: top">
             <fieldset>
               <legend>Personal Informations</legend>
               <div>
-                <label for="name">Name :</label>
-                <input id="name" type="text" placeholder="Enter your name" />
+                <table>
+                  <tr>
+                    <td>
+                      <label for="name">Name</label>
+                    </td>
+                    <td>
+                      <input
+                        id="name"
+                        type="text"
+                        placeholder="Enter your name"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="surname">Surname</label></td>
+                    <td>
+                      <input
+                        id="surname"
+                        type="text"
+                        placeholder="Enter your surname"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="mail">Email</label></td>
+                    <td>
+                      <input
+                        type="email"
+                        id="mail"
+                        placeholder="Enter your Email"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="birthday">Birthday</label></td>
+                    <td><input type="date" id="birthday" name="birthday" /></td>
+                  </tr>
+                </table>
               </div>
-              <br />
-              <div>
-                <label for="surname">Surname : </label>
-                <input
-                  id="surname"
-                  type="text"
-                  placeholder="Enter your surname"
-                />
-              </div>
-              <br />
               <div>
                 <p>Gender</p>
                 <input type="radio" id="woman" name="gender" />
@@ -36,42 +62,38 @@
                 <input type="radio" id="man" name="gender" />
                 <label for="man">Man</label>
               </div>
-              <br />
-              <div>
-                <label for="mail">Email : </label>
-                <input type="email" id="mail" />
-              </div>
-              <br />
-              <div>
-                <label for="birthday">Birthday:</label>
-                <input type="date" id="birthday" name="birthday" />
-              </div>
             </fieldset>
           </td>
           <td style="vertical-align: top">
             <fieldset>
               <legend>Tell me about yourself</legend>
               <div>
-                <label for="intro">Write about yourself</label>
-                <textarea
-                  id="intro"
-                  cols="20"
-                  rows="5"
-                  placeholder="Shortly..."
-                ></textarea>
-              </div>
-              <br />
-              <div>
-                <label for="myfile">Upload your CV:</label>
-                <input type="file" id="myfile" name="myfile" />
-              </div>
-              <br />
-              <div>
-                <label for="question">Feeling burnt out? : </label>
-                <select id="question">
-                  <option value="true">YES</option>
-                  <option value="false">NO</option>
-                </select>
+                <table>
+                  <tr>
+                    <td><label for="intro">Write about yourself</label></td>
+                    <td>
+                      <textarea
+                        id="intro"
+                        cols="20"
+                        rows="5"
+                        placeholder="Shortly..."
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="myfile">Upload your CV</label></td>
+                    <td><input type="file" id="myfile" name="myfile" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="question">Feeling burnt out?</label></td>
+                    <td>
+                      <select id="question">
+                        <option value="true">YES</option>
+                        <option value="false">NO</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
               </div>
             </fieldset>
           </td>
@@ -89,6 +111,32 @@
                 <input type="checkbox" id="sit" />
                 <label for="sit">Sit</label>
               </div>
+              <br />
+              <div>
+                <iframe
+                  width="460"
+                  height="400"
+                  src="https://www.youtube.com/embed/CmzKQ3PSrow?si=4usp4IBouu_SgTdX"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </fieldset>
+          </td>
+          <td style="vertical-align: top">
+            <fieldset>
+              <legend>Iframe</legend>
+              <div>
+                <iframe
+                  name="myIFrame"
+                  src="the-lord-of-the-rings.html"
+                  frameborder="0"
+                  width="700"
+                  height="400"
+                ></iframe>
+              </div>
             </fieldset>
           </td>
         </tr>
@@ -98,6 +146,14 @@
       <button type="submit">Save !</button>
       <button type="reset">Reset !</button>
       <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+      <br />
+      <a href="semantic-tags.html" target="myIFrame"
+        >Go to semantic lesson link</a
+      >
+      <br />
+      <a href="the-lord-of-the-rings.html" target="myIFrame"
+        >Go to Lord of the rings lesson link</a
+      >
     </form>
   </body>
 </html>
