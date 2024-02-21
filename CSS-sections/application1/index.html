@@ -29,17 +29,41 @@
         border: inherit;
         color: initial;
       }
+      #section1 {
+        margin-bottom: 20px;
+      }
+      #section2 {
+        padding: 30px;
+        border: 5px solid black;
+        height: 100%;
+      }
+      .box {
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+      }
+      #first {
+        background-color: lavender;
+      }
+      #second {
+        background-color: saddlebrown;
+      }
+      #third {
+        background-color: violet;
+      }
     </style>
   </head>
   <!-- CSS priorities -->
   <!-- inlineCss > id > class selecter > tag selecter > browserdefaults -->
+
+  <!--display : none | inline | inline-block | block -->
   <body>
     <h1 style="text-align: center">Let's learn CSS</h1>
     <main>
-      <section>
+      <section id="section1">
         <h1>Lorem, ipsum dolor.</h1>
       </section>
-      <section>
+      <section id="section2">
         <h2>Lorem ipsum dolor sit amet.</h2>
       </section>
       <p class="blogpost">
@@ -68,6 +92,11 @@
         molestiae sed voluptate consequatur at nesciunt, quam eaque dolor
         adipisci ipsam quidem minima fuga cum.
       </p>
+      <div>
+        <div class="box" id="first">first</div>
+        <div class="box" id="second">second</div>
+        <div class="box" id="third">third</div>
+      </div>
     </main>
   </body>
 </html>
